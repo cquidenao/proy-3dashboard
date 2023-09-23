@@ -2,7 +2,7 @@
 export async function fetchExchangeRates() {
     try {
         // Envía una solicitud GET a la API de Frankfurter para obtener las tasas de cambio más recientes
-        const response = await fetch("https://api.frankfurter.app/latest");
+        const response = await fetch(`https://api.frankfurter.app/latest`);
 
         // Verifica si la respuesta no es exitosa
         if (!response.ok) {
